@@ -215,14 +215,14 @@ h3 {
 
 .skills-card {
     border: 1px solid #d4af37;
-    width: 65px;
-    height: 30px;
-
     border-radius: 9px;
     margin-top: 20px;
+    
     color: grey;
-
     transition: 0.6s ease;
+    padding: 5px;
+
+    font-size: 17px;
 }
 
 .skills-card:hover {
