@@ -13,12 +13,17 @@ body {
     color: white;
 }
 
+::-webkit-scrollbar {
+    scrollbar-width: none;
+}
+
 #header {
     border-bottom: 0.5px solid grey;
 
     position: fixed;
     width: 100%;
     background-color: #000;
+    z-index: 1000;
 }
 
 #main-content {
@@ -118,7 +123,7 @@ h3 {
 
 .section-divider {
     border-top: 1px solid #d4af37;
-    width: 90%;
+    width: 96%;
     height: 1px;
 
     text-align: center;
@@ -175,6 +180,57 @@ h3 {
     font-size: 20px;
 }
 
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    min-height: 60vh;
+}
+
+#skills h4 {
+    color: #d4af37;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.skills-content {
+    max-width: 600px;
+}
+
+.skills-content p {
+    font-size: 25px;
+    line-height: 1.5;
+    max-width: 450px;
+
+
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.skills-card {
+    border: 1px solid #d4af37;
+    width: 65px;
+    height: 30px;
+
+    border-radius: 9px;
+    margin-top: 20px;
+    color: grey;
+
+    transition: 0.6s ease;
+}
+
+.skills-card:hover {
+    color: white;
+    background-color: #d4af37;
+    transform: translateY(-10px);
+}
+
 #contact {
     display: flex;
     flex-direction: column;
@@ -187,7 +243,7 @@ h3 {
 #contact h4 {
     color: grey;
     font-size: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .contact-content {
@@ -235,3 +291,4 @@ h3 {
     background-color: #d4af37;
     transform: translateY(-5px);
 }
+
